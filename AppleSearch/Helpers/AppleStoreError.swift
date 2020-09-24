@@ -13,5 +13,5 @@ enum AppleStoreError: LocalizedError {
     case thrownError(Error)
     case noData
     case unableToDecode(Error)
-    case unableToDecodeImage(Error)
+    case unableToDecodeImage
 }

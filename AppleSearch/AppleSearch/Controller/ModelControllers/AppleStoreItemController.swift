@@ -15,9 +15,8 @@ struct StringConstants {
     fileprivate static let termQueryName = "term"
     fileprivate static let entityQueryName = "entity"
     fileprivate static let musicEntityQueryValue = "musicTrack"
+    
     fileprivate static let appEntityQueryValue = "software"
-    
-    
 }
 
 class AppleStoreItmeController {
@@ -92,11 +91,12 @@ class AppleStoreItmeController {
     static func fetchImageFrom(url: URL, completion: @escaping (Result<UIImage, AppleStoreError>) -> Void ) {
         URLSession.shared.dataTask(with: url) { (data, _, error) in
             if let error = error {
-            return completion(.failure(.thrownError(error)))
+                return completion(.failure(.thrownError(error)))
             }
             
-            guard let data = data else {completion(.failure(.noData))}
-            guard let image = UIImage(data: data) else {return completion(.failure(.unableToDecode(<#T##Error#>)))}
+            guard let data = data else { return completion(.failure(.noData)) }
+            
+            guard let image = UIImage(data: data) else {return completion(.failure(.unableToDecodeImage))}
             completion(.success(image))
         }.resume()
     }
