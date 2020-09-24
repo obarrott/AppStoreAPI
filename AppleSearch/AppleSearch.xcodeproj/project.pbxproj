@@ -14,6 +14,8 @@
 		A64B67EC251CFE140000F5A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64B67EA251CFE140000F5A1 /* LaunchScreen.storyboard */; };
 		A64B67FA251D03F70000F5A1 /* MusicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B67F9251D03F70000F5A1 /* MusicItem.swift */; };
 		A64B67FC251D08A50000F5A1 /* AppItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B67FB251D08A50000F5A1 /* AppItem.swift */; };
+		A64B67FE251D0DB90000F5A1 /* AppleStoreItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B67FD251D0DB90000F5A1 /* AppleStoreItemController.swift */; };
+		A64B6801251D11390000F5A1 /* AppleStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B6800251D11390000F5A1 /* AppleStoreError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A64B67ED251CFE140000F5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A64B67F9251D03F70000F5A1 /* MusicItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicItem.swift; sourceTree = "<group>"; };
 		A64B67FB251D08A50000F5A1 /* AppItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppItem.swift; sourceTree = "<group>"; };
+		A64B67FD251D0DB90000F5A1 /* AppleStoreItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleStoreItemController.swift; sourceTree = "<group>"; };
+		A64B6800251D11390000F5A1 /* AppleStoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleStoreError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				A64B67DE251CFE110000F5A1 /* AppleSearch */,
+				A64B67FF251D11200000F5A1 /* Helpers */,
 				A64B67DD251CFE110000F5A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 			children = (
 				A64B67F8251D03CF0000F5A1 /* ModelControllers */,
 				A64B67F7251D03C60000F5A1 /* ViewControllers */,
+				A64B67FD251D0DB90000F5A1 /* AppleStoreItemController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -116,6 +122,14 @@
 			children = (
 			);
 			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		A64B67FF251D11200000F5A1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A64B6800251D11390000F5A1 /* AppleStoreError.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,9 +204,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A64B67FC251D08A50000F5A1 /* AppItem.swift in Sources */,
+				A64B67FE251D0DB90000F5A1 /* AppleStoreItemController.swift in Sources */,
 				A64B67FA251D03F70000F5A1 /* MusicItem.swift in Sources */,
 				A64B67E0251CFE110000F5A1 /* AppDelegate.swift in Sources */,
 				A64B67E2251CFE110000F5A1 /* SceneDelegate.swift in Sources */,
+				A64B6801251D11390000F5A1 /* AppleStoreError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
