@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		A64B67E0251CFE110000F5A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B67DF251CFE110000F5A1 /* AppDelegate.swift */; };
 		A64B67E2251CFE110000F5A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B67E1251CFE110000F5A1 /* SceneDelegate.swift */; };
-		A64B67E4251CFE110000F5A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B67E3251CFE110000F5A1 /* ViewController.swift */; };
 		A64B67E7251CFE110000F5A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64B67E5251CFE110000F5A1 /* Main.storyboard */; };
 		A64B67E9251CFE140000F5A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64B67E8251CFE140000F5A1 /* Assets.xcassets */; };
 		A64B67EC251CFE140000F5A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64B67EA251CFE140000F5A1 /* LaunchScreen.storyboard */; };
+		A64B67FA251D03F70000F5A1 /* MusicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B67F9251D03F70000F5A1 /* MusicItem.swift */; };
+		A64B67FC251D08A50000F5A1 /* AppItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B67FB251D08A50000F5A1 /* AppItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A64B67DC251CFE110000F5A1 /* AppleSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64B67DF251CFE110000F5A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A64B67E1251CFE110000F5A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A64B67E3251CFE110000F5A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A64B67E6251CFE110000F5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A64B67E8251CFE140000F5A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A64B67EB251CFE140000F5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A64B67ED251CFE140000F5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A64B67F9251D03F70000F5A1 /* MusicItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicItem.swift; sourceTree = "<group>"; };
+		A64B67FB251D08A50000F5A1 /* AppItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,64 @@
 		A64B67DE251CFE110000F5A1 /* AppleSearch */ = {
 			isa = PBXGroup;
 			children = (
+				A64B67F4251D03A60000F5A1 /* Model */,
+				A64B67F5251D03AB0000F5A1 /* View */,
+				A64B67F6251D03B00000F5A1 /* Controller */,
+				A64B67F3251D037B0000F5A1 /* Resources */,
+			);
+			path = AppleSearch;
+			sourceTree = "<group>";
+		};
+		A64B67F3251D037B0000F5A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				A64B67DF251CFE110000F5A1 /* AppDelegate.swift */,
 				A64B67E1251CFE110000F5A1 /* SceneDelegate.swift */,
-				A64B67E3251CFE110000F5A1 /* ViewController.swift */,
-				A64B67E5251CFE110000F5A1 /* Main.storyboard */,
 				A64B67E8251CFE140000F5A1 /* Assets.xcassets */,
 				A64B67EA251CFE140000F5A1 /* LaunchScreen.storyboard */,
 				A64B67ED251CFE140000F5A1 /* Info.plist */,
 			);
-			path = AppleSearch;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A64B67F4251D03A60000F5A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A64B67F9251D03F70000F5A1 /* MusicItem.swift */,
+				A64B67FB251D08A50000F5A1 /* AppItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A64B67F5251D03AB0000F5A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A64B67E5251CFE110000F5A1 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A64B67F6251D03B00000F5A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A64B67F8251D03CF0000F5A1 /* ModelControllers */,
+				A64B67F7251D03C60000F5A1 /* ViewControllers */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A64B67F7251D03C60000F5A1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A64B67F8251D03CF0000F5A1 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A64B67E4251CFE110000F5A1 /* ViewController.swift in Sources */,
+				A64B67FC251D08A50000F5A1 /* AppItem.swift in Sources */,
+				A64B67FA251D03F70000F5A1 /* MusicItem.swift in Sources */,
 				A64B67E0251CFE110000F5A1 /* AppDelegate.swift in Sources */,
 				A64B67E2251CFE110000F5A1 /* SceneDelegate.swift in Sources */,
 			);
@@ -285,7 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AppleSearch/Info.plist;
+				INFOPLIST_FILE = AppleSearch/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AppleSearch/Info.plist;
+				INFOPLIST_FILE = AppleSearch/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
